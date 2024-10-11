@@ -1,0 +1,20 @@
+oc get clusterrole
+oc desribe clusterrole cluster-status
+two types of role cluster and local(name space level)=================================
+oc adm policy add-cluser-role-to-user cluster-admin user1
+oc adm policy remove-cluster-role-from-user cluster-admin user1 
+oc adm policy who-can delete  user1  -to see who can delete
+
+oc auth can-i delete no --as user1
+
+oc adm policy add-role-to-user admin user1 -n namespace
+oc adm policy add-role-to-user view user2 -n namespace
+ks get users
+
+oc adm groups new cluster-admin
+oc adm groups new sap-ns
+oc get groups
+oc adm groups add-users sap-ns user1 user2
+oc adm policy add-cluser-role-to-group cluster-admin SAp-ns
+
+oc adm groups remove-users sap-ns user1
