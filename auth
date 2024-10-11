@@ -1,0 +1,33 @@
+openshift-config is the main project to store secret infor
+oc get oauth
+oc get oauth/cluster -oyaml
+oc get secret
+oc extract secret/htpassword-secret --to=-  -->to find extact info(- means dispaly,. means download)
+cat htpassword
+oc delete secrethtpassword-secret  ---impact to all user 
+oc get po -n openshift-authentication ---pod will create after delete secret
+htpasswd -B -b htpasswd user4 redhat
+oc create secret generic htpasswd-secret --from-file=htpasswd=htpaswd -n openshift-config
+oc login -u user1 -p redhat
+oc whoami
+oc get no
+export KUBECONF=lb.ext.kubeconfig
+oc get no
+kc get users
+oc get identity
+oc get groups
+how to remove user======================================
+vi htpasswd --remove what user you want
+or
+htpasswd -D htpasswd user5 -->its local not clusrter
+oc set data secret/name --from-file=htppaswd -n openshift-config 
+oc extract secret/htpassword-secret --to=- 
+oc delete user user5 -->it shw bcz of catch memory
+oc get identity
+oc delete identity user5
+oc login -u ues5 -p redhat
+htpasswd -b -B htpasswd user4 red --for change password
+oc set data secret/name --from-file=htppaswd -n openshift-config
+
+
+
