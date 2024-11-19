@@ -1,0 +1,247 @@
+1002  helm repo list 
+ 1003  git
+ 1004  oc 
+ 1005  kubectl 
+ 1006  helm 
+ 1007  clear
+ 1008  cat ocp/binary/pull-secret.yaml 
+ 1009  clear
+ 1010  helm repo list 
+ 1011  helm repo remove grafana mobb  cribl 
+ 1012  helm repo list 
+ 1013  helm repo remove nfs-subdir-external-provisioner
+ 1014  clear
+ 1015  helm repo list 
+ 1016  helm repo add j2c-repo https://charts.bitnami.com/bitnami
+ 1017  helm repo list 
+ 1018  oc new-project demo-500
+ 1019  ocp-sno
+ 1020  ocp-hub
+ 1021  helm repo list 
+ 1022  oc new-project demo-500
+ 1023  helm install my-nginx bitnami/nginx --version 18.2.0 
+ 1024  helm repo list 
+ 1025  helm install  nginx j2c-repo/nginx --version 18.2.0
+ 1026  oc get po 
+ 1027  oc get svc
+ 1028  oc get route 
+ 1029  oc get ingress
+ 1030  curl --version 18.2.0
+ 1031  curl 10.91.2.50
+ 1032  oc get svc 
+ 1033  helm search 
+ 1034  helm search repo 
+ 1035  helm search repo | grep httpd
+ 1036  helm search repo | grep php
+ 1037  helm install php j2c-repo/phpbb 
+ 1038  oc get po 
+ 1039  oc get svc
+ 1040  oc get po 
+ 1041  oc get deployment 
+ 1042  oc get po 
+ 1043  watch oc get po 
+ 1044  oc get svc
+ 1045  kubectl get secret --namespace demo-500 php-phpbb -o jsonpath="{.data.phpbb-password}" | base64 -d
+ 1046  oc get po 
+ 1047  oc edit deployment/nginx
+ 1048  oc get po 
+ 1049  oc edit deployment/nginx
+ 1050  oc edit deployment 
+ 1051  oc get po 
+ 1052  helm get values nginx 
+ 1053  helm repo list 
+ 1054  helm list 
+ 1055  helm get values j2c-repo/nginx
+ 1056  helm get values nginx
+ 1057  helm get values nginx --all 
+ 1058  helm show values nginx 
+ 1059  helm show values j2c-repo/nginx 
+ 1060  clear
+ 1061  helm show values j2c-repo/nginx 
+ 1062  helm show values j2c-repo/nginx  > nginx-value.yaml 
+ 1063  vim 
+ 1064  vim nginx-value.yaml 
+ 1065  helm uninstall nginx 
+ 1066  helm list 
+ 1067  oc get po 
+ 1068  helm uninstall php
+ 1069  oc get po 
+ 1070  oc get all 
+ 1071  clea r
+ 1072  clear 
+ 1073  helm repo list 
+ 1074  helm search repo | grep nginx 
+ 1075  helm get values j2c-repo/nginx  > prod-nginx-value.yaml 
+ 1076  helm get values j2c-repo/nginx  
+ 1077  helm get values j2c-repo/nginx 
+ 1078  helm install nginx-demo j2c-repo/nginx 
+ 1079  helm get values j2c-repo/nginx 
+ 1080  helm get values nginx 
+ 1081  helm list 
+ 1082  helm get values j2c-repo/nginx-demo 
+ 1083  clea r
+ 1084  clear
+ 1085  helm repo list 
+ 1086  helm show values j2c-repo/nginx
+ 1087  helm uninstall nginx-demo 
+ 1088  helm show values j2c-repo/nginx
+ 1089  helm show values j2c-repo/nginx > prod-nginx-value.yaml 
+ 1090  vi prod-nginx-value.yaml 
+ 1091  helm install nginx j2c-helm/nginx -f prod-nginx-value.yaml 
+ 1092  helm install nginx j2c-repo/nginx -f prod-nginx-value.yaml 
+ 1093  oc get po 
+ 1094  vi prod-nginx-value.yaml 
+ 1095  oc get hpa 
+ 1096  oc get all 
+ 1097  oc get hpa 
+ 1098  oc adm top po 
+ 1099  oc get hpa 
+ 1100  oc edit deployment 
+ 1101  oc get hpa 
+ 1102  oc edit deployment 
+ 1103  oc get hpa 
+ 1104  oc adm top po 
+ 1105  oc get hpa 
+ 1106  oc adm top po 
+ 1107  oc get po 
+ 1108  oc adm top po 
+ 1109  oc get hpa 
+ 1110  oc adm top po 
+ 1111  oc get po 
+ 1112  oc adm top po 
+ 1113  oc get po 
+ 1114  oc adm top po 
+ 1115  oc get po 
+ 1116  oc get hap 
+ 1117  oc get hpa
+ 1118  oc adm top po 
+ 1119  oc get hpa
+ 1120  helm search repo 
+ 1121  helm get values j2c-repo/mysql  
+ 1122  oc get hpa 
+ 1123  oc get po 
+ 1124  oc get hap 
+ 1125  oc get hpa
+ 1126  oc get po 
+ 1127  oc get hpa 
+ 1128  clear
+ 1129  history
+ 1130  helm show values j2c-repo/nginx
+ 1131  helm show values j2c-repo/php
+ 1132  helm search repo 
+ 1133  helm show values j2c-repo/vault
+ 1134  helm show values j2c-repo/haproxy 
+ 1135  clear
+ 1136  helm show chats  j2c-repo/haproxy 
+ 1137  helm show chat  j2c-repo/haproxy 
+ 1138  helm show chart  j2c-repo/haproxy 
+ 1139  oc get po 
+ 1140  helm search repo 
+ 1141  helm install mysql j2c-repo/mysql  --dry-run 
+ 1142  oc get po 
+ 1143  helm repo list 
+ 1144  helm repo add redhat https://charts.openshift.io  
+ 1145  helm repo list 
+ 1146  oc get no 
+ 1147  helm list 
+ 1148  helm history  nginx 
+ 1149  oc get po 
+ 1150  oc get hpa 
+ 1151  oc get po 
+ 1152  oc new-project demo-501
+ 1153  helm repo list 
+ 1154  helm search repo redhat 
+ 1155  helm search repo 
+ 1156  helm install demo-nginx j2c-repo/nginx
+ 1157  oc get po 
+ 1158  helm list 
+ 1159  helm list -A
+ 1160  helm list 
+ 1161  helm list --all-namespaces
+ 1162  helm list 
+ 1163  helm history  demo-nginx
+ 1164  helm search repo j2c-repo/nginx --version 
+ 1165  helm search repo j2c-repo/nginx --versions 
+ 1166  helm search repo j2c-repo  j2c-repo/nginx --versions 
+ 1167  oc get po 
+ 1168  helm upgrade demo-nginx j2c-repo/nginx --version=1.26.1
+ 1169  helm upgrade demo-nginx j2c-repo/nginx --version=18.1.8 
+ 1170  oc get po 
+ 1171  watch oc get po 
+ 1172  oc get po 
+ 1173  helm history  demo-nginx
+ 1174  helm upgrade demo-nginx j2c-repo/nginx --version=17.3.2
+ 1175  oc get po 
+ 1176  helm history  demo-nginx
+ 1177  helm rollout demo-nginx --revision=2
+ 1178  helm rollback  demo-nginx --revision=2
+ 1179  helm rollback  demo-nginx --revisions=2
+ 1180  helm rollback  demo-nginx 2
+ 1181  helm history  demo-nginx
+ 1182  helm search repo redhat 
+ 1183  helm search repo redhat --version 
+ 1184  helm search repo redhat --versions 
+ 1185  helm show values j2c-repo/nginx 
+ 1186  helm search repo redhat | grep etherpad
+ 1187  helm list 
+ 1188  helm history demo-nginx 
+ 1189  helm rollback  demo-nginx 1
+ 1190  helm list 
+ 1191  oc get ns 
+ 1192  oc get po -n openshift-image-registry
+ 1193  oc project openshift
+ 1194  oc get is 
+ 1195  oc get is -oname 
+ 1196  oc get is -oname | wc -l 
+ 1197  oc get is 
+ 1198  oc get no 
+ 1199  oc whoami 
+ 1200  oc whoami -t
+ 1201  podman login -u $(oc whoami) -p (oc whoami -t) default-route-openshift-image-registry.apps.hub.cancom.intern.local
+ 1202  podman login -u $(oc whoami) -p $(oc whoami -t) default-route-openshift-image-registry.apps.hub.cancom.intern.local
+ 1203  podman images 
+ 1204  podman pull default-route-openshift-image-registry.apps.hub.cancom.intern.local/openshift/java
+ 1205  podman pull saibabu/my-demo-app:v2.0.0
+ 1206  clean 
+ 1207  clear
+ 1208  podman images 
+ 1209  oc get is 
+ 1210  podman images 
+ 1211  podman tag docker.io/saibabu/my-demo-app:v2.0.0  default-route-openshift-image-registry.apps.hub.cancom.intern.local/openshift/j2c-demo-app:latest
+ 1212  podman images 
+ 1213  oc get is 
+ 1214  oc get is | grep j2c 
+ 1215  podman images 
+ 1216  podman push default-route-openshift-image-registry.apps.hub.cancom.intern.local/openshift/j2c-demo-app:latest 
+ 1217  oc get is | grep j2c 
+ 1218  oc new-app j2c-demo-app  
+ 1219  oc get po 
+ 1220  oc expose svc/j2c-demo-app
+ 1221  oc get toute 
+ 1222  oc get route 
+ 1223  curl j2c-demo-app-openshift.apps.hub.cancom.intern.local
+ 1224  oc get is 
+ 1225  nslookup j2c-demo-app-openshift.apps.hub.cancom.intern.local
+ 1226  oc get po 
+ 1227  oc delet all --all 
+ 1228  oc delete all --all 
+ 1229  oc get is 
+ 1230  oc new-project demo-502
+ 1231  oc new-app https://github.com/sairbabu58/demo.git
+ 1232  oc get po 
+ 1233  oc logs demo-1-build 
+ 1234  oc logs -f demo-1-build 
+ 1235  oc get po 
+ 1236  oc logs -f demo-1-build 
+ 1237  oc get po 
+ 1238  oc logs -f demo-1-build 
+ 1239  oc login --insecure-skip-tls-verify=false -u admin -p MTQ2ODA1 https://api.cluster-2mxth.sandbox2267.opentlc.com:6443
+ 1240  oc new-project demo-100
+ 1241  oc new-app https://github.com/sairbabu58/demo.git
+ 1242  oc logs -f buildconfig/demo
+ 1243  oc get is 
+ 1244  oc get po 
+ 1245  history
+[root@service ~]# 
+[root@service ~]# 
+
