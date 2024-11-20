@@ -1,3 +1,5 @@
+htpasswd -c -B -b htpasswd user4 redhat
+-c means create,b means use password on command line rathen than promting it,B-bcrypt encription -very secure
 openshift-config is the main project to store secret infor
 oc get oauth
 oc get oauth/cluster -oyaml
