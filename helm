@@ -188,6 +188,11 @@
  1189  helm rollback  demo-nginx 1
  1190  helm list 
  1191  oc get ns 
+helm package firstchart(to tar)
+helm push .tar github -->to push it
+helm package -d ----move to target like github
+helm pull j2c/httpd
+
  1192  oc get po -n openshift-image-registry
  1193  oc project openshift
  1194  oc get is 
