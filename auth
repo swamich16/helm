@@ -1,7 +1,8 @@
-htpasswd -c -B -b htpasswd user4 redhat
+htpasswd -c -B -b htpasswd-file user4 redhat
 -c means create,b means use password on command line rathen than promting it,B-bcrypt encription -very secure
-htpasswd -B -b htpasswd user2 redhat1
-htpasswd -B -b htpasswd user3 redhat1
+htpasswd -B -b htpasswd-file user2 redhat1
+htpasswd -B -b htpasswd-file user3 redhat1
+oc create secret generic htpasswd-secret --from-file=htpasswd=htpaswd-file -n openshift-config
 openshift-config is the main project to store secret infor
 oc get oauth
 oc get oauth/cluster -oyaml
